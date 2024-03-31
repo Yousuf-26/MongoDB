@@ -1,0 +1,12 @@
+
+username: yousufpractice
+p/w:Ur0rqUxzAJLw8mqC
+
+
+String connection:
+mongodb+srv://yousufpractice:Ur0rqUxzAJLw8mqC@newone.l1eytth.mongodb.net/?retryWrites=true&w=majority&appName=newOne
+
+
+http://localhost:3000/
+
+http://localhost:3000/api/products
