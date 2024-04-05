@@ -35,6 +35,19 @@ app.post("/api/products", async (req, res) => {
   }
 });
 
+//FOR FINDING A PARTICULAR RECORD IN MONGODB
+app.get("/api/products/:id", async (req, res) => {
+  try {
+    //HOW TO GET THE PARAMETERS FROM THE URL
+    const { id } = req.params;
+    const products = await Product.findById(id);
+    res.status(200).json(products);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.message });
+  }
+});
+
 /*
 app.listen(3000, () => {
   console.log("This app is listening to 3000, localhost:3000/");
